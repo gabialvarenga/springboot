@@ -27,7 +27,7 @@ public class Subscription {
     private User subscriber;
 
     @ManyToOne
-    @JoinColumn(name = "indication_user_id", nullable = true)
+    @JoinColumn(name = "indication_user_id", nullable = true) //essa coluna pode ter valor "null" (nullable)
     private User indication;
 
     public Integer getSubscriptionNumer() {

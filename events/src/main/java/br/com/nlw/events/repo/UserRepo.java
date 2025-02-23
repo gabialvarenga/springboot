@@ -5,7 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 import br.com.nlw.events.model.User;
 
 public interface UserRepo extends CrudRepository<User, Integer> {
-
-    public User findBtEmail(String email); //recuperar usuário pelo email 
-
+    public User findByEmail(String email); // recuperar usuário pelo email
 }
